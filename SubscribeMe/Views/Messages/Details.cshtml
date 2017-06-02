@@ -1,0 +1,50 @@
+﻿@model SubscribeMe.Models.Messages
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Messages</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MessageSent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MessageSent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SentDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
